@@ -27,5 +27,5 @@ int main() {
     // Katalogni yopish
     closedir(dir);
 
-    return 0;
+    return 0;   
 }
