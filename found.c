@@ -2,7 +2,7 @@
 #include <dirent.h> // Katalog bilan ishlash uchun kutubxona
 
 int main() {
-    char dirname[256]; // Katalog nomini saqlash uchun
+    char dirname[256];  
     struct dirent *entry; // Fayl va papka ma'lumotlarini saqlash uchun
     DIR *dir; // Katalogni ifodalovchi pointer
 
@@ -10,7 +10,6 @@ int main() {
     printf("Katalog nomini kiriting: ");
     scanf("%s", dirname);
 
-    // Katalogni ochish
     dir = opendir(dirname);
     if (dir == NULL) {
         printf("Katalogni ochishda xatolik: %s\n", dirname);
@@ -19,12 +18,10 @@ int main() {
 
     printf("Fayl va papkalar:\n");
 
-    // Katalogdagi fayllarni o'qish
     while ((entry = readdir(dir)) != NULL) {
                 printf("%s\n", entry->d_name);
     }
 
-    // Katalogni yopish
     closedir(dir);
 
     return 0;   
