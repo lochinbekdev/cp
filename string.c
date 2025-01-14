@@ -49,7 +49,15 @@ int main() {
         printf("%c",str6[i]);
     }
 
-    
+    //strtok method splits a string into tokens
+    char str7[] = "Hello World";
+    char* token = strtok(str7, " ");
+    while(token != NULL){
+        printf("%s\n", token);
+        token = strtok(NULL, " ");
+    }
+
+
     return 0;
 
 }
