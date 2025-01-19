@@ -1,7 +1,7 @@
 CPP=clang
 CPPFLAGS=-g -Wall
 
-all: pass_arg
+all: bufferoverrun
 
 %: %.c
 	$(CPP) $(CPPFLAGS) -o $@ $^

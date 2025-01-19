@@ -6,10 +6,10 @@
 
 
 char buffer[BUFFER_SIZE] = "message";
-char password[BUFFER_SIZE]= "password";
+char password[BUFFER_SIZE] = "password";
 
 
-int main (char argc, char *argv) {
+int main (int argc , char **argv) {
     if(argc != 3) {
         printf("Usage: %s  <password>  <string_to_string>\n", argv[0]);        
         exit(1);
