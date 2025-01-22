@@ -1,7 +1,7 @@
 CPP=clang
 CPPFLAGS=-g -Wall
 
-all: bufferoverrun
+all: realloc
 
 %: %.c
 	$(CPP) $(CPPFLAGS) -o $@ $^
